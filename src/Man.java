@@ -1,4 +1,12 @@
 public class Man {
+    private int age;
+    private String name;
+
+    public Man(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
     }
@@ -12,14 +20,6 @@ public class Man {
     }
 
     public void setName(String name) {
-        this.name = name;
-    }
-
-    private int age;
-    private String name;
-
-    public Man(int age, String name) {
-        this.age = age;
         this.name = name;
     }
 
