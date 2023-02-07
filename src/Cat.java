@@ -2,9 +2,12 @@ public class Cat {
     private String name;
     private int age;
 
-    public Cat(String name, int age) {
+    private String sex;
+
+    public Cat(String name, int age, String sex) {
         this.name = name;
         this.age = age;
+        this.sex = sex;
     }
 
     public String getName() {
@@ -23,11 +26,20 @@ public class Cat {
         this.age = age;
     }
 
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
     @Override
     public String toString() {
         return "Cat{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", sex='" + sex + '\'' +
                 '}';
     }
 }
